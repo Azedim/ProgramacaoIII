@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.imagem{
+    width: 120px;
+    margin: 0 0;
+}
+.imagem img{
+    width: 100%
+}
+.imagem2{
+    width: 300px;
+    margin: 0 auto
+}
+.imagem2 img{
+    width: 100%
+}
+.mensagem{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+.quadro{
+    float: left;
+    width: 400px;
+}
+.quadro p{
+    width: 80%
+}
+.corpo{
+    background-color: lightgray
+}
+h1{
+    text-align: center
+}
+h2{
+    text-align: center;
+}

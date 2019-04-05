@@ -1,0 +1,46 @@
+body{
+    background-color: azure;
+    font-size: 20px;
+}
+h1{
+    color: #841;
+    text-align: center
+}
+p{
+    font-size: 14pt
+}
+.fonte{
+    color: #519
+}
+.fonte2{
+    color: #900
+}
+a{
+    text-decoration: none
+}
+a:hover{  /*como fica ao passar o mouse por cima do link, é sobreescrevido pelo a:visited*/
+    color: black;
+    background-color: black
+}
+a:link{ /*como o link fica ao abrir a pagina, é sobreescrito pelo a:visited*/
+    color: midnightblue;
+    background-color: antiquewhite
+}
+a:visited{ /*como o link fica ao ser visitado*/
+    color: blueviolet;
+    background-color: rgb(16, 247, 170)
+}
+table,tr,td,th{ /*define os padroes de table, de tr, de td e de th*/
+    border-color: #000;
+    border-style: dotted;
+    border-width: 2pt;
+    border-collapse: collapse
+}
+.imagem{
+    width: 500px; /*tamanho do cubo imaginario*/
+    margin: 0 auto; /*primeiro valor = para cima e para baixo e o segundo = pros lados*/
+                    /*0 = para cima e baixo e auto = pros lados*/
+}
+.imagem img{
+    width: 100%; /*quantos porcento do cubo imaginario*/
+}

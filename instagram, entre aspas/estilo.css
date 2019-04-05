@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: gray;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+}
+.login-input{
+    display: grid;
+    grid-template-columns: 450px 1fr 450px;
+    grid-template-rows: 100px 1fr 100px;
+    height: 95vh;
+    width: 100%;
+    grid-template-areas: 
+    " . . ."
+    " . login ."
+    " . . ."
+}
+form{
+    background-color: white;
+    padding: 5px;
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+}
+.input-group > input{
+    width: 450px;
+    height: 27px;
+    border-radius: 30px;
+}
+.entrar{
+    background: rgb(84,170,236);
+    color: white;
+    height: 27px;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.perfil{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 1fr 50px;
+    height: 90vh;
+    width: 99vw;
+}

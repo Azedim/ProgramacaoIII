@@ -1,0 +1,20 @@
+form{
+    width: 270px;
+    margin: 0 auto;
+}
+input[type = 'text'],input[type='password'],input[type='datetime-local'],button,select{
+    width: 100%;
+}
+input[type = 'text']:focus,input[type='password']:focus,input[type='datetime-local']:focus{
+    border-color: aqua;
+    background-color: snow
+}
+/*input:required{ Todos os inputs required(obrigatorios) terão background = red
+    background-color: red
+}
+input:optional{  Todos os inputs optional(opcional) terão background = blue
+    background-color: blue
+}  */
+button{
+    background-color: aquamarine
+}

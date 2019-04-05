@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+    
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <fieldset> <!--Quadrado que envolve as opções-->
+            <legend>Campos construidos com input</legend> <!--mensagem que aparece no topo do quadrado-->
+            <label for="nome">Nome: <input id="nome" type = 'text' name = 'nome' placeholder="Informe o seu nome completo" required></label>
+            <br> <!--quebra linha-->
+            <label for="senha">Senha: <input id="senha" type = 'password' name="senha" placeholder="Minimo de 8 digitos" required></label>
+            <label for="data e hora"> Data e Hora: <input id="data e hora" type ="datetime-local" name = 'data e hora'></label>
+        </fieldset>
+        <fieldset>
+            <legend>Campos construidos com select</legend>
+            <label for="curso">Curso:</label>
+            <select name = "curso" id="curso">
+                <option value="1">Informatica</option> <!--verifica-se o valor-->
+                <option value="2">Química</option>
+                <option value="3">esqueci -_-</option>
+            </select>
+        </fieldset>
+        <fieldset>
+                <legend>Checkbox e Radio</legend>
+                <label>Selecione aqui os seus interesses: </label>
+                <input type="checkbox" name = "futbol" value="1">futbol <!--os nomes precisam ser diferentes-->
+                <input type="checkbox" name = "volley" value="1">volley <!--checa-se pelo nome e não o valor-->
+                <input type="checkbox" name = "sei la" value="1">sei la <!--no radio checa-se o sim ou não-->
+                <br>
+                <label>Concorda com o contrato? </label>
+                <input type="radio" name = "opção" value="1">sim <!--Os rádios do mesmo grupo precisam-->
+                <input type="radio" name = "opção" value="1">não <!--ter o mesmo nome para que so possam-->
+                <input type="radio" name = "opção" value="1">sei la <!--ser marcados uma vez-->
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
