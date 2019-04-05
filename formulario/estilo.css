@@ -32,7 +32,7 @@ form{
     font-size: 20px;
 }
 form > input{
-    font-size: 20px;
+    font-size: 1.3em;
 }
 .resultado{
     text-align: center;
