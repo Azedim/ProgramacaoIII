@@ -1,15 +1,27 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
+    background-color: aquamarine;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 350px 1fr 350px;
+    height: 100vh;
+    width: 100vw;
     grid-template-areas: 
     ' . login .'
 }
 form{
+    padding: 15px;
+    background-color: white;
     grid-area: login;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 1px solid black;
 }
 .botoes{
     display: flex;
+    justify-content: space-around;
 }
