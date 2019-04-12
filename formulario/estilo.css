@@ -35,5 +35,7 @@ form > input{
     font-size: 1.3em;
 }
 .resultado{
+    padding: 5px;
+    border: 1px solid gray;
     text-align: center;
 }
