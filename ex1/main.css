@@ -1,0 +1,36 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas: ' .  inputs .';
+    background-color: aquamarine;
+}
+.inputs{
+    background-color: white;
+    grid-area: inputs;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input{
+    padding: 5px;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+}
+.botoes > button{
+    height: 5vh;
+    width: 10vw;
+}
+.resposta{
+    padding: 5px;
+    align-items: center;
+    border: 1px solid gray;
+}
