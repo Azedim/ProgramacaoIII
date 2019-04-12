@@ -26,7 +26,7 @@ bDivi.addEventListener('click',function(e){
     let v1 = document.querySelector('.valor1');
     let v2 = document.querySelector('.valor2');
     let divi = parseInt(v1.value) / parseInt(v2.value);
-    document.querySelector(".resultado").innerHTML = "O resultado é: " + divi;
+    document.querySelector(".resultado").innerHTML = "O resultado é: " + divi.toFixed(2); //número de casas decimais
     e.preventDefault();
 });
 bSub.addEventListener('click',function(e){
