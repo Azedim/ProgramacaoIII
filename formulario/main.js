@@ -25,14 +25,14 @@ bMulti.addEventListener('click',function(e){
 bDivi.addEventListener('click',function(e){
     let v1 = document.querySelector('.valor1');
     let v2 = document.querySelector('.valor2');
-    let multi = parseInt(v1.value) / parseInt(v2.value);
-    document.querySelector(".resultado").innerHTML = "O resultado é: " + multi;
+    let divi = parseInt(v1.value) / parseInt(v2.value);
+    document.querySelector(".resultado").innerHTML = "O resultado é: " + divi;
     e.preventDefault();
 });
 bSub.addEventListener('click',function(e){
     let v1 = document.querySelector('.valor1');
     let v2 = document.querySelector('.valor2');
-    let multi = parseInt(v1.value) - parseInt(v2.value);
-    document.querySelector(".resultado").innerHTML = "O resultado é: " + multi;
+    let sub = parseInt(v1.value) - parseInt(v2.value);
+    document.querySelector(".resultado").innerHTML = "O resultado é: " + sub;
     e.preventDefault();
 });
