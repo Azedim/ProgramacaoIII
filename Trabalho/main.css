@@ -9,9 +9,9 @@ body{
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 350px 1fr 350px;
     grid-template-areas: 
-    ' . formulario .';
+    ' image formulario image2'
 }
 .formulario{
     grid-area: formulario;
@@ -22,4 +22,22 @@ body{
 }
 .formulario > input, button{
     padding: 5px;
+}
+.imagem{
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    margin-top: 298px;
+
+}
+.imagem2{
+    grid-area: image2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 298px;
+
+}
+img{
+    width: 350px;
+    height: 1fr;
 }
