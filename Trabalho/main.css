@@ -11,7 +11,7 @@ body{
     height: 100vh;
     grid-template-columns: 350px 1fr 350px;
     grid-template-areas: 
-    ' image formulario image2'
+    ' . formulario .'
 }
 .formulario{
     grid-area: formulario;
@@ -24,20 +24,15 @@ body{
     padding: 5px;
 }
 .imagem{
-    grid-area: image;
-    display: flex;
-    flex-direction: column;
-    margin-top: 298px;
-
-}
-.imagem2{
-    grid-area: image2;
-    display: flex;
-    flex-direction: column;
-    margin-top: 298px;
-
+    margin-top: 294px;
 }
 img{
     width: 350px;
     height: 1fr;
+}
+#resultado{
+    padding: 10px;
+}
+button{
+    background-color: lightgray;
 }
