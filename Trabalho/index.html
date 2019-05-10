@@ -15,18 +15,18 @@
                 <h1>Calculadora de hidaratação</h1>
                 <h3>Essa calculadora pega a quantidade de água, refrigerante ou álcool que foi consumida e calcula quanta água é necessaria para manter o corpo hidratado.</h3>
                 <div>
-                    <input type="number" name="number" placeholder="quantidade bebida">
-                    <select>
-                        <option>mililitro(s)</option>
-                        <option>Litro(s)</option>
+                    <input type="number" id="number" placeholder="quantidade bebida">
+                    <select id="quantidade">
+                        <option value="ml">mililitro(s)</option>
+                        <option value="l">Litro(s)</option>
                     </select>
                 </div>
                 <div>
                     O que foi bebido:
-                    <select>
-                        <option>Água</option>
-                        <option>Refigerante</option>
-                        <option>Bebida Alcoólica</option>
+                    <select id="conteudo">
+                        <option value="a">Água</option>
+                        <option value="co">Água de Côco</option>
+                        <option value="ba">Bebida Alcoólica</option>
                     </select>
                 </div>
                 <button id="ação">Calcular</button>
