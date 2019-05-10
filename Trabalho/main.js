@@ -1,9 +1,8 @@
 var Radio = document.querySelector("#light");
 var Radio2 = document.querySelector("#dark");
 var bCalcula = document.querySelector("#ação");
-var Qnt = document.querySelector("#quantidade");
-var Cont = document.querySelector("#conteudo");
-var necessario = 2;
+var Qnt = document.querySelector("#quantidade").value;
+var Cont = document.querySelector("#conteudo").value;
 
 Radio.addEventListener("click",function(e){
     document.getElementById("contain").style.background = "white";
@@ -27,21 +26,26 @@ Radio2.addEventListener("click",function(e){
 })
 bCalcula.addEventListener("click",function(e){
     e.preventDefault();
-    if (Qnt.value == "ml") {
-        necessario*1000;
+    let necessario = 2;
+
+    if (Qnt == 'ml') {
+        necessario = necessario*1000;
     }
-    let bebido = document.querySelector("#number");
-    if (Cont.value == "ba") {
-        necessario + bebido;
+    let bebido = document.querySelector("#number").value;
+    if (Cont == 'ba') {
+        necessario = necessario + bebido;
+    }else if (Cont == 'a') {
+            necessario = necessario - bebido;
     }else{
-        if (Cont.value == "a") {
-            necessario - bebido;
-        }else{
-            necessario + (bebido * 32);
-        }
+            necessario = necessario + (bebido * 32);
+    }
+
+    if (Qnt == 'ml') {
+        necessario = necessario/1000;
     }
     if (necessario > 0) {
-        document.querySelector('#resultado').innerHTML = "Falta beber: " + necessario;
-    }  
-    console.log(necessario);
+        document.querySelector('#resultado').value = "Falta beber: " + necessario + " Litros";
+    }else{
+        document.querySelector('#resultado').value = "Água extra: " + necessario + " Litros";
+    }
 })
