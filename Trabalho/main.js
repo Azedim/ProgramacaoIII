@@ -46,13 +46,13 @@ bCalcula.addEventListener("click",function(e){
     }
 
     if (Qnt == 'ml') {
-        if (falta > 0) {
+        if (falta >= 0) {
             document.querySelector('#resultado').value = "Falta beber: " + falta + " mililitros";
         }else{
             document.querySelector('#resultado').value = "Água extra: " + falta + " mililitros";
         }
     }else if(Qnt == 'l'){
-        if (falta > 0) {
+        if (falta >= 0) {
             document.querySelector('#resultado').value = "Falta beber: " + falta + " Litros";
         }else{
             document.querySelector('#resultado').value = "Água extra: " + falta + " Litros";
