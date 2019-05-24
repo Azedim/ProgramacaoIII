@@ -1,8 +1,6 @@
 var Radio = document.querySelector("#light");
 var Radio2 = document.querySelector("#dark");
 var bCalcula = document.querySelector("#ação");
-var Qnt = document.querySelector("#quantidade").value;
-var Cont = document.querySelector("#conteudo").value;
 
 Radio.addEventListener("click",function(e){
     document.getElementById("contain").style.background = "white";
@@ -27,25 +25,38 @@ Radio2.addEventListener("click",function(e){
 bCalcula.addEventListener("click",function(e){
     e.preventDefault();
     let necessario = 2;
+    let Qnt = document.querySelector("#quantidade").value;
+    let Cont = document.querySelector("#conteudo").value;
+    let falta = 0;
 
     if (Qnt == 'ml') {
-        necessario = necessario*1000;
+        necessario = 2000;
+    }else if(Qnt == 'l'){
+        necessario = 2;
     }
+
     let bebido = document.querySelector("#number").value;
+
     if (Cont == 'ba') {
-        necessario = necessario + bebido;
+        falta =  necessario + parseInt(bebido);
     }else if (Cont == 'a') {
-            necessario = necessario - bebido;
+        falta = necessario - parseInt(bebido);
     }else{
-            necessario = necessario + (bebido * 32);
+        falta = necessario + parseInt(bebido) * 32;
     }
 
     if (Qnt == 'ml') {
-        necessario = necessario/1000;
+        if (falta >= 0) {
+            document.querySelector('#resultado').value = "Falta beber: " + falta + " mililitros";
+        }else{
+            document.querySelector('#resultado').value = "Água extra: " + falta + " mililitros";
+        }
+    }else if(Qnt == 'l'){
+        if (falta >= 0) {
+            document.querySelector('#resultado').value = "Falta beber: " + falta + " Litros";
+        }else{
+            document.querySelector('#resultado').value = "Água extra: " + falta + " Litros";
+        }
     }
-    if (necessario > 0) {
-        document.querySelector('#resultado').value = "Falta beber: " + necessario + " Litros";
-    }else{
-        document.querySelector('#resultado').value = "Água extra: " + necessario + " Litros";
-    }
+   
 })
