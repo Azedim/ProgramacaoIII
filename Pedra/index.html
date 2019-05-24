@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recuperação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Pedra-Papel-Tesoura</h1>
+            <input type="text" id="jogador1" placeholder="Jogador 1">
+            <div class="escolha">
+                <input type="radio" name="escolha" value="pedra" checked>
+                <img src="pedra.png">
+                <input type="radio" name="escolha" value="tesoura">
+                <img src="tesoura.png">
+                <input type="radio" name="escolha" value="papel">
+                <img src="papel.png">
+            </div>
+            <br>
+            <input type="text" id="jogador2" placeholder="Jogador 2">
+            <div class="escolha">
+                <input type="radio" name="escolha2" value="pedra" checked>
+                <img src="pedra.png">
+                <input type="radio" name="escolha2" value="tesoura">
+                <img src="tesoura.png">
+                <input type="radio" name="escolha2" value="papel">
+                <img src="papel.png">
+            </div>
+            <button id="verificar">Verificar</button>
+            <h1 id="vencedor">VENCEDOR: </h1>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

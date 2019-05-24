@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.escolha{
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    height: 100px;
+}
+.escolha > img{
+    height: 85%;
+}
+.escolha > input{
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+button{
+    height: 35px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    border: none;
+    text-align: center;
+}
