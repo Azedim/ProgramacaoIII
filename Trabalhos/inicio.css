@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("fundo2.png");
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(80, 43, 17);
+}
+.container{
+    
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 180px 1fr 180px;
+    grid-template-areas: 
+    ' . login .';
+}
+
+.formulario{
+    min-height: 100%;
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#senha{
+    margin-right: 11.6px;
+}
+
+button{
+    width: 75px;
+    height: 25px;
+}
+
+.fundo{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 130px 250px 170px 170px 170px 170px 170px;
+    grid-template-rows: 115px 115px 115px 115px 115px 40px;
+    grid-template-areas: 
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . f f";
+}
+.sala{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 83px 83px 83px 83px 83px 83px 83px 30px;
+    grid-template-areas: 
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . . . ."
+    " . . f f .";
+
+}
+.fundo > img{
+    border: 5px black solid;
+    background-color: rgb(80, 43, 17);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+}
+.sala > img{
+    border: 1px black solid;
+    background-color: rgb(80, 43, 17);
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 20px;
+    width: 75px;
+    height: 75px;
+}
+.misturar{
+    grid-area: f;
+    height: 30px;
+    margin-left: 50px;
+}
+input,button{
+    border-radius: 10px;
+}
+button{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    padding: 0;
+}
